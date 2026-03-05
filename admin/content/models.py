@@ -37,6 +37,7 @@ class News(models.Model):
     url_en = models.URLField()
 
     img = models.ImageField(upload_to='news/', null=True, blank=True)
+    priority = models.IntegerField(default=0) 
 
     def __str__(self):
         return self.title_en

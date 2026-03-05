@@ -9,7 +9,7 @@ class SpeakerSerializer(serializers.ModelSerializer):
 class NewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = News
-        fields = ['id', 'title_kz', 'title_ru', 'title_en', 'description_kz', 'description_ru', 'description_en', 'url_kz', 'url_ru', 'url_en', 'img']
+        fields = ['id', 'title_kz', 'title_ru', 'title_en', 'description_kz', 'description_ru', 'description_en', 'url_kz', 'url_ru', 'url_en', 'img', 'priority']
 
 class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:

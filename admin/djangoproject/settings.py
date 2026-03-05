@@ -101,11 +101,11 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'govhrdb',  # Имя базы данных
-        'USER': 'govhruser',  # Имя пользователя (или 'root', если используете root)
-        'PASSWORD': 'Madi8586',  # Пароль пользователя
-        'HOST': 'localhost',  # Хост (оставьте localhost, если база данных на той же машине)
-        'PORT': '5432',  # Порт PostgreSQL
+        'NAME': 'govhrdb',
+        'USER': 'govhruser',
+        'PASSWORD': 'Madi8586',
+        'HOST': '127.0.0.1',  
+        'PORT': '5432',  
     }
 }
 

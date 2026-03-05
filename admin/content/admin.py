@@ -20,8 +20,9 @@ class SpeakerAdmin(admin.ModelAdmin):
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ("title_en", "url_preview", "img_preview")
+    list_display = ("priority", "title_ru", "url_preview", "img_preview")
     search_fields = ("title_kz", "title_ru", "title_en", "description_kz", "description_ru", "description_en")
+    ordering = ("-priority",) 
 
     def url_preview(self, obj):
         return format_html('<a href="{}" target="_blank" style="color:blue;">{}</a>', obj.url_en, obj.url_en)
